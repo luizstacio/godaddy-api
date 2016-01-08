@@ -1,0 +1,22 @@
+{
+  "name": "godaddy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha spec/**/*.spec.js --compilers js:babel-core/register",
+    "test-cover": "sh ./test.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "request-promise": "^1.0.2"
+  },
+  "devDependencies": {
+    "isparta": "^3.5.3",
+    "istanbul": "^0.4.0",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.3",
+    "nock": "^2.17.0"
+  }
+}
