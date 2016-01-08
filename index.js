@@ -22,6 +22,7 @@ class Domain {
     let req = util.applyAuth({
       method: 'PUT',
       url: `${config.api}/domains/${this.domain}/records/CNAME/${name}`,
+      body: [{ data }],
       json: true
     }, config.key, config.secret);
 
